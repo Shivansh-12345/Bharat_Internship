@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivansh- developer portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            transition: 0.2s;
+        }
+
+        body {
+            background-color: rgb(0, 0, 34);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(13, 1, 37);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(172, 172, 240);
+            cursor: pointer;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstsection {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 60px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            /* background-color: lightcoral; */
+            font-size: 2.5rem;
+            /* margin:70px 0; */
+        }
+
+        .leftsection .buttons {
+            padding: 35px 0px;
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            background-color: #1e2167;
+            cursor: pointer;
+        }
+
+        form .btn {
+            padding: 12px;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            background-color: #1e2167;
+            cursor: pointer;
+        }
+
+        .leftsection .btn a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .rightsection img {
+            /* background-color: lightcoral; */
+            border: 2px solid yellow;
+            border-radius: 180px;
+            width: 100%;
+            height: 380px;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: rgb(159, 71, 241);
+        }
+
+        #element {
+            color: rgb(159, 71, 241);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            height: 80vh;
+            margin: auto;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9;
+        }
+
+        .secondsection .box {
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            margin: 0 140px;
+            height: 60px;
+            width: 1px;
+            background-color: white;
+        }
+
+        .image-top {
+            width: 30px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+
+            position: relative;
+            top: 35px;
+            width: 150px;
+            font-size: 25px;
+
+        }
+
+        .vertical-desc {
+            font-size: 15px;
+            position: relative;
+            top: 55px;
+            color: gray;
+            width: 150px;
+        }
+
+        footer {
+            background-color: rgb(39, 39, 39);
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 120px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            color: gray;
+            padding: 12px 0;
+            text-align: center;
+        }
+
+
+        /*----------------Contact----------*/
+        #p-size,#p-size1{
+            color: #9a73e9;
+            margin-right: 15px;
+            font-size: 20px;
+
+        }
+
+        .social-icons {
+            margin-top: 30px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            font-size: 30px;
+            margin-right: 15px;
+            color: #ababab;
+            display: inline-block;
+            transform: 0.5s;
+        }
+
+        .social-icons a:hover {
+            color: #ab45e6;
+            transform: translateY(-5px);
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            border: 0;
+            outline: none;
+            background: #313131;
+            padding: 15px;
+            margin: 15px 0;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 6px;
+        }
+
+        form.btn2 {
+            padding: 14px 60px;
+            font-size: 18px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Shivansh's Portfolio..
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is
+                <span class="purple">
+                    Shivansh
+                </span>
+                <div>
+                    and I am a passionate
+                </div>
+
+                <!-- Element to contain animated typing -->
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn"><a href="Sgres.pdf" Download>Download Resume</a></button>
+                    <button class="btn"><a href="https://github.com/Shivansh-12345">Goto Github</a></button>
+                    <!-- <button class="btn">Goto Github</button> -->
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="s2-removebg.png" alt="err">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">what i have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img src="html.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        HTML
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore earum necessitatibus molestiae
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="css.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        CSS
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore earum necessitatibus molestiae
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="jss.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        Jscript
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore earum necessitatibus molestiae
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="nodejs.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        Nodejs
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore earum necessitatibus molestiae
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <hr>
+        <!--------------contact------------------------>
+        <section class="firstsection">
+            <div class="leftsection">
+                <h1 class="subtitle"> Contact Me</h1>
+
+                <p class="pg3" id="p-size1"><i class="fa-solid fa-envelope-circle-check"></i> shivansh.34368@gmail.com</p>
+
+                <p class="pg3" id="p-size"><i class="fa-solid fa-phone"></i> 82175xxxxx</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="rightsection">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn .btn2">Submit</button>
+
+                </form>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Shivansh Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            copyright &copy; www.sgportfolio.com | All rights reserved
+        </div>
+
+    </footer>
+    <script src="https://kit.fontawesome.com/f4d7c615fd.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Enterpreneur', 'Web Designer'],
+            typeSpeed: 50,
+        });
+
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+</body>
+
+</html>
